@@ -1,4 +1,4 @@
-public class Transportation {
+public class Vehicle {
     private String vinNumber;
     private String licensePlate;
     private String licenseType;
@@ -37,52 +37,98 @@ public class Transportation {
         System.out.println("Electronic brake applied.");
     }
 
+    public Vehicle(String vinNumber, String licenseType, String licensePlate, int capacity, String fuelType, String make, String model, double weight, boolean hasGPS, boolean engineType, int maxCapacity, String color, TerrainType terrain, double fuelCapacity) {
+        this.vinNumber = vinNumber;
+        this.licenseType = licenseType;
+        this.licensePlate = licensePlate;
+        this.capacity = capacity;
+        this.fuelType = fuelType;
+        this.make = make;
+        this.model = model;
+        this.weight = weight;
+        this.hasGPS = hasGPS;
+        this.engineType = engineType;
+        this.maxCapacity = maxCapacity;
+        this.color = color;
+        this.terrain = terrain;
+        this.fuelCapacity = fuelCapacity;
+    }
+
     // Getters and Setters
-    public String getVinNumber() { return vinNumber; }
-    public void setVinNumber(String vinNumber) { this.vinNumber = vinNumber; }
+    public String getVinNumber() {
+        return vinNumber;
+    }
 
-    public String getLicensePlate() { return licensePlate; }
-    public void setLicensePlate(String licensePlate) { this.licensePlate = licensePlate; }
+    public String getLicensePlate() {
+        return licensePlate;
+    }
 
-    public String getLicenseType() { return licenseType; }
-    public void setLicenseType(String licenseType) { this.licenseType = licenseType; }
+    public String getLicenseType() {
+        return licenseType;
+    }
 
-    public int getSpeed() { return speed; }
-    public void setSpeed(int speed) { this.speed = speed; }
+    public int getSpeed() {
+        return speed;
+    }
 
-    public int getCapacity() { return capacity; }
-    public void setCapacity(int capacity) { this.capacity = capacity; }
+    public void setSpeed(int speed) {
+        this.speed = speed;
+    }
 
-    public String getFuelType() { return fuelType; }
-    public void setFuelType(String fuelType) { this.fuelType = fuelType; }
+    public int getCapacity() {
+        return capacity;
+    }
 
-    public String getMake() { return make; }
-    public void setMake(String make) { this.make = make; }
+    public String getFuelType() {
+        return fuelType;
+    }
 
-    public String getModel() { return model; }
-    public void setModel(String model) { this.model = model; }
+    public String getMake() {
+        return make;
+    }
 
-    public double getWeight() { return weight; }
-    public void setWeight(double weight) { this.weight = weight; }
+    public String getModel() {
+        return model;
+    }
 
-    public boolean hasGps() { return hasGPS; }
-    public void setGps(boolean hasGPS) { this.hasGPS = hasGPS; }
+    public double getWeight() {
+        return weight;
+    }
 
-    public boolean isEngineType() { return engineType; }
-    public void setEngineType(boolean engineType) { this.engineType = engineType; }
+    public boolean hasGps() {
+        return hasGPS;
+    }
 
-    public int getMaxCapacity() { return maxCapacity; }
-    public void setMaxCapacity(int maxCapacity) { this.maxCapacity = maxCapacity; }
+    public boolean isEngineType() {
+        return engineType;
+    }
 
-    public String getColor() { return color; }
-    public void setColor(String color) { this.color = color; }
+    public int getMaxCapacity() {
+        return maxCapacity;
+    }
 
-    public TerrainType getTerrain() { return terrain; }
-    public void setTerrain(TerrainType terrain) { this.terrain = terrain; }
+    public String getColor() {
+        return color;
+    }
 
-    public double getFuelCapacity() { return fuelCapacity; }
-    public void setFuelCapacity(double fuelCapacity) { this.fuelCapacity = fuelCapacity; }
+    public TerrainType getTerrain() {
+        return terrain;
+    }
 
-    public double getSpeedometer() { return speedometer; }
-    public void setSpeedometer(double speedometer) { this.speedometer = speedometer; }
+    public double getFuelCapacity() {
+        return fuelCapacity;
+    }
+
+    public double getSpeedometer() {
+        return speedometer;
+    }
+
+    public void setSpeedometer(double speedometer) {
+        this.speedometer = speedometer;
+    }
+
+    @Override
+    public String toString() {
+        return "Vehicle{" + "vinNumber='" + vinNumber + '\'' + ", licensePlate='" + licensePlate + '\'' + ", licenseType='" + licenseType + '\'' + ", speed=" + speed + ", capacity=" + capacity + ", fuelType='" + fuelType + '\'' + ", make='" + make + '\'' + ", model='" + model + '\'' + ", weight=" + weight + ", hasGPS=" + hasGPS + ", engineType=" + engineType + ", maxCapacity=" + maxCapacity + ", color='" + color + '\'' + ", terrain=" + terrain + ", fuelCapacity=" + fuelCapacity + ", speedometer=" + speedometer + '}';
+    }
 }
